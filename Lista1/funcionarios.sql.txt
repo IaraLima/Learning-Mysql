@@ -1,0 +1,21 @@
+create database Db_Rh;
+create table Funcionarios(id bigint auto_increment, nome varchar(100) not null, salario decimal(8,2) not null, cargo varchar(100) not null, data_pagamento date not null, primary key (id));
+insert into Funcionarios(nome,salario,cargo,data_pagamento) values("Pessoa1",6000, "desenvolvedor pleno","2005/04/12");
+insert into Funcionarios(nome,salario,cargo,data_pagamento) values("Pessoa1",3000, "desenvolvedor junior","1995/04/24");
+insert into Funcionarios(nome,salario,cargo,data_pagamento) values("Pessoa1",2000, "desenvolvedor junior","1995/04/24");
+insert into Funcionarios(nome,salario,cargo,data_pagamento) values("Pessoa1",600, "jovem aprendiz","1995/04/24");
+insert into Funcionarios(nome,salario,cargo,data_pagamento) values("Pessoa1",900, "estagiário","1995/04/24");
+
+
+
+
+select * from Funcionarios where salario>2000.00;
+
+
+select * from Funcionarios where salario<2000.00;
+
+
+update Funcionarios set salario=2500.00 where id=3;
+
+
+select * from Funcionarios;
